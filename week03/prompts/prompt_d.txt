@@ -1,0 +1,9 @@
+PROMPT_D = PROMPT_B + """
+<intermediate_fields>
+Before outputting JSON, compute:
+- days_late_reasoning: the number of calendar days between promised date and today
+- policy_clause_applied: the specific policy text that applies (or "none")
+
+The policy threshold is 3 or more days late. Only orders meeting this threshold
+are eligible for a credit. Below 3 days, proposed_action must be "check_status".
+</intermediate_fields>"""

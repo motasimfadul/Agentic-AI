@@ -1,0 +1,14 @@
+PROMPT_C = PROMPT_B + """
+<examples>
+EMAIL: "cancel everything and refund me, this is the third time"
+OUTPUT: {"intent":"cancel_and_refund","order_id":null,"days_late":null,
+         "proposed_action":"escalate_to_human","evidence_ids":[]}
+
+EMAIL: "Do you ship to Norway?"
+OUTPUT: {"intent":"other","order_id":null,"days_late":null,
+         "proposed_action":"reply_only","evidence_ids":[]}
+
+EMAIL: "My order A1032 is 3 days late. I want the credit."
+OUTPUT: {"intent":"late_delivery","order_id":"A1032","days_late":3,
+         "proposed_action":"request_approval","evidence_ids":["MSG-E01","POL-LATE"]}
+</examples>"""

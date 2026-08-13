@@ -1,0 +1,1 @@
+PROMPT_E = PROMPT_B   # Same words; the decoder enforces the schema
